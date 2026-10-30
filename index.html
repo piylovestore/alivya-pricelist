@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fffdf8"><meta name="description" content="Lihat katalog dan pricelist premium apps Alivya. Cari paket favoritmu, lalu order via website atau WhatsApp Alivya."><title>Alivya Pricelist · Flower Shop</title>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fffdf8"><meta name="description" content="Lihat katalog dan pricelist premium apps Alivya. Cari paket favoritmu, lalu order via website atau WhatsApp Alivya."><title>Alivya Pricelist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--blue:#b6cff8;--pink:#ff7497;--blush:#ffc8d6;--green:#c4d885;--yellow:#f8dc82;--ink:#35354c;--muted:#74768b;--line:#f1e5e9;--paper:#fff;--cream:#fffaf1}
@@ -40,10 +40,26 @@ body{background:#fff!important;color:#4a513d}
 .empty{background:#fff!important}
 .custom-logo{width:42px;height:42px;object-fit:cover;border-radius:50%;vertical-align:middle;margin-right:8px}.hero{height:auto!important;min-height:0!important;display:block!important;padding:0!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important;overflow:hidden}.hero::before,.hero::after{display:none!important}.custom-banner{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;border-radius:20px}@media(max-width:600px){.custom-logo{width:35px;height:35px}.custom-banner{border-radius:14px}}
  .app-logo{width:38px;height:38px;object-fit:contain;border-radius:9px;display:block;background:#fff}.icon{overflow:hidden}.icon-fallback{font-size:22px}@media(max-width:600px){.app-logo{width:34px;height:34px}}
+</style><style>/* Halloween seasonal styling */
+:root{--ink:#392b4c!important;--muted:#7e708e!important}
+body{background:#fff!important;color:#392b4c!important}
+.brand span{color:#a36ac4!important}.toplink{color:#8d57ae!important;border-color:#e7d5f1!important}
+.mainhead h2{color:#55356e!important}.mainhead h2 span{color:#f59b44!important}
+.chip.active,.chip:hover,.order:not(.wa){background:#8b57b1!important;border-color:#8b57b1!important;color:white!important;box-shadow:none!important}
+.card:hover,.card.open{border-color:#d5b6e7!important}.group h4,.row .price{color:#9856ae!important}
+.search{border-color:#e6d6f0!important}.backtop{background:#8b57b1!important}
+.hero{position:relative!important;overflow:hidden!important;border-radius:23px!important}
+.hero:before,.hero:after{display:none!important}
+.halloween-float{position:absolute;z-index:3;pointer-events:none;filter:drop-shadow(0 3px 3px #0002);animation:haunt 4s ease-in-out infinite alternate}
+.halloween-float.ghost{left:2%;top:8%;font-size:clamp(20px,4vw,43px)}
+.halloween-float.bat{right:3%;top:8%;font-size:clamp(18px,3vw,32px);animation-delay:-1.7s}
+.halloween-float.pumpkin{right:4%;bottom:5%;font-size:clamp(20px,4vw,42px);animation-delay:-2s}
+@keyframes haunt{to{transform:translateY(-11px) rotate(7deg)}}
+@media(prefers-reduced-motion:reduce){.halloween-float{animation:none}}
 </style></head><body>
 <div class="wrap"><header class="top"><div class="brand"><img class="custom-logo" src="logo.jpeg" alt="Logo Alivya" /><span>alivya</span> pricelist</div><a class="toplink" target="_blank" rel="noopener" href="https://piylove.store">Our Store</a></header>
-<section class="hero" aria-label="Taman Bunga Alivya"><img class="custom-banner" src="header.png" alt="Taman Bunga Alivya" /></section>
-<div class="mainhead"><div><h2>The App Collection <span style="color:#b88caa">✿</span></h2><p>Pilih aplikasi untuk lihat paket & harga.</p></div><span class="count" id="count"></span></div>
+<section class="hero" aria-label="Alivya Halloween"><img class="custom-banner" src="halloween-header.png" alt="Alivya Pricelist" /></section>
+<div class="mainhead"><div><h2>The App Collection <span style="color:#f59b44">🎃</span></h2><p>Pilih aplikasi untuk lihat paket & harga.</p></div><span class="count" id="count"></span></div>
 <label class="search"><span>⌕</span><input id="query" type="search" placeholder="Cari aplikasi, paket, atau durasi..." aria-label="Cari aplikasi"></label><nav id="filters" class="filters" aria-label="Kategori"></nav><main class="grid" id="grid"></main></div>
 <button id="back" class="backtop" aria-label="Kembali ke atas">↑</button>
 <!-- Brand icons load from site favicons; some differ from Play Store app icons. -->
